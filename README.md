@@ -1,5 +1,12 @@
 # LeetCode Solutions
 
-- Solved 35+ problems on LeetCode  
-- Topics covered: Arrays, Strings, Linked List
+- Solved 39+ problems on LeetCode  
+- Currently practicing Data Structures and Algorithms  
 
+## Topics Covered
+- Arrays  
+- Strings  
+- Linked List   
+
+## Goal
+- Reach 150+ problems before placements
