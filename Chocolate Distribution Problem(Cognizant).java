@@ -14,25 +14,22 @@
 
 // time & space: O(1)
 
-import java.util.*;
-
 class Main {
 
-    public static void main(String[] args) {
+    static final long MOD = 1000000007L;
 
-        Scanner sc = new Scanner(System.in);
-
-        int n = sc.nextInt();
-
-        long MOD = 1000000007L;
+    public static long totalChocolates(int n) {
 
         long base = ((long)n * (n + 1)) / 2;
 
         long extra = (n / 5) * 4L;
 
-        long sum = (base + extra) % MOD;  // used MOD beacause ques mentions it
+        return (base + extra) % MOD;
+    }
 
-        System.out.println(sum);
+    public static void main(String[] args) {
+
+        System.out.println(totalChocolates(5));
     }
 }
 
