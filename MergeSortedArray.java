@@ -27,4 +27,28 @@ class Solution {
     }
 }
 
+// using heap
+import java.util.*;
+
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        for (int i = 0; i < m; i++) {
+            pq.offer(nums1[i]);
+        }
+
+        for (int num : nums2) {
+            pq.offer(num);
+        }
+
+        int idx = 0;
+
+        while (!pq.isEmpty()) {
+            nums1[idx++] = pq.poll();
+        }
+    }
+}
+
 // traversing from the back. Compares 2 elements each at the back of the arrays. The one with larger value will be kept at the back of the 1st array and changed arrays pointer changes (decreasing)
