@@ -6,7 +6,7 @@ Implement the NumMatrix class:
 NumMatrix(int[][] matrix) Initializes the object with the integer matrix matrix.
 int sumRegion(int row1, int col1, int row2, int col2) Returns the sum of the elements of matrix inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
 You must design an algorithm where sumRegion works on O(1) time complexity.
-time: O(1), space: O(n)*/
+time: O(1), constructor time: O(rows * cols), space: O(rows * cols)*/
 
 class NumMatrix {
     private int[][] prefix;
