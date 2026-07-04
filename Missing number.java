@@ -13,8 +13,9 @@ class Solution {
         return s - sum;
     }
 }
+// if overflow occurs in the range use long
 /////
-
+// this method handles overflow
 class Solution {
     public int missingNumber(int[] nums) {
         int xor = nums.length;
